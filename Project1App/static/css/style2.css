@@ -1,0 +1,405 @@
+html
+{
+	scroll-behavior: smooth;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #1B1D20;
+}
+/*====================================Navbar===========================================*/
+
+.navbar-brand
+{
+	font-size: 30px;
+}
+.navbar-nav
+{
+ 	font-size: 20px;
+
+}
+@media screen and (max-width:768px)
+{
+	.navbar-nav
+	{
+		text-align: center;
+		margin: 0 !important;
+	}
+}
+/*=========================================Home Page===================================*/
+.home
+{
+	color: whitesmoke;
+}
+
+.image img
+{
+	width: 100%;
+	height: 100%;
+}
+.lineborder
+{
+	width: 	100%;
+	height: 1px;
+	background: grey;
+}
+.line
+{
+	width: 2px;
+	height: 73%;
+	background: grey;
+	position: absolute;
+	top: 0;
+	left: 49%;
+	animation: lineanim 0.5s linear;
+}
+@keyframes lineanim 
+{
+	0%
+	{
+		height: 0%;
+	}
+	50%
+	{
+		height: 36%;
+	}
+	100%
+	{
+		height: 73%;
+	}
+}
+.circle
+{
+	content: '';
+	position: absolute;
+	top: 72%;
+	left: 43.8%;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;	
+	opacity: 1;
+	background: red;
+	z-index: 6;
+	visibility:visible;
+	animation: circleanim 1.0s  linear;
+	/*transition: visibility 2.5s ease;*/
+}
+@keyframes circleanim
+{
+	0%
+	{
+		opacity: 0;	
+	}
+	50%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+		
+	}
+}
+
+@media screen and (max-width: 1024px)
+{
+	.circle
+{
+	left: 42%;
+}
+.line
+{
+	height: 75%;
+}
+@keyframes lineanim 
+{
+	0%
+	{
+		height: 0%;
+	}
+	50%
+	{
+		height: 36%;
+	}
+	100%
+	{
+		height: 75%;
+	}
+}
+}
+@media screen and (max-width:768px)
+{
+
+.lineborder
+	{
+		margin-top: 50px !important;
+	}
+	.circle
+	{
+		left: 40%;
+		top: 70%;
+	}
+}
+
+@media screen and (max-width:550px)
+{
+	.circle
+{
+	display: none;
+}
+.line
+{
+	display: none ;
+}
+}
+/*====================================Service====================================================*/
+
+.services
+{
+	position: relative;
+}
+.cards .row .img img
+{
+	width: 100%;
+	height: 100%;
+	padding: 30px 0;
+
+}
+.lineservice
+{
+	margin-top: 70px;
+	width: 2px;
+	height: 92%;
+	background: grey;
+	position: absolute;
+	top: 0;
+	left: 49%;
+	animation: lineanimservice 0.5s linear;
+}
+@keyframes lineanimservice 
+{ 
+	0%
+	{
+		height: 0%;
+	}
+	50%
+	{
+		height: 36%;
+	}
+	100%
+	{
+		height:80%;
+	}
+}
+
+
+@media screen and (max-width:1024px)
+{
+	/*.cards .row .img img
+	{
+		padding: 0 !important;
+	}*/
+	.lineservice
+{
+	margin-top: 70px;
+	width: 2px;
+	height: 90%;
+	background: grey;
+	position: absolute;
+	top: 0;
+	left: 49%;
+	animation: lineanimservice 0.5s linear;
+}
+@keyframes lineanimservice 
+{ 
+	0%
+	{
+		height: 0%;
+	}
+	50%
+	{
+		height: 36%;
+	}
+	100%
+	{
+		height:90%;
+	}
+}
+}
+@media screen and (max-width:768px)
+{
+	.services
+	{
+		margin-top: 100px !important;
+	}
+	.cards .row .img img
+	{
+		margin: 0 !important;		
+	}
+}
+@media screen and (max-width:600px)
+{
+	.line-circle .lineservice
+{
+	display: none;
+}
+}
+
+@media screen and (max-width:450px)
+{
+	.cards .row .img img
+	{
+		padding: 0 !important;
+		padding: 0 !important;
+		margin: 20px 0 !important;
+	}
+	.services
+	{
+		margin-top: 50px !important;
+	}
+
+}
+/*====================================About Us===================================================*/
+.about-us
+{
+	color: whitesmoke;
+	margin-top: 50px;
+}
+.about-us .row .img
+{
+	/*background: whitesmoke;*/
+}
+.about-us .row .img img
+{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+@media screen and(max-width:550px)
+{
+	.about-us .row .img img
+	{
+		padding: 10px;
+	}
+}	
+
+/*====================================Contact Us form============================================*/
+.contact-us 
+{
+	text-align: center;	
+	/*height: 100vh;*/
+	color: #fff;
+}
+.form 
+{
+	margin-top: 40px;
+	font-size: 22px;
+	border: 1px solid #000 smooth;
+	padding: 30px;
+	box-shadow: 1px 1px 10px 5px inset;
+	border-radius: 10px;
+	/*transform: rotate3d(1,1,1,10deg);*/
+}
+.form input
+{
+	margin-top:30px;
+	width: 300px;
+	height: 50px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	border-bottom: 2px solid #fff;
+	outline: none;
+	background: transparent;
+	
+}
+input:hover::placeholder
+{
+	transform: translateY(-15px);
+	transition: all 0.5s ease;
+	font-size: 15px;
+}
+.form textarea
+{
+	margin-top:30px;
+	width: 300px;
+	height: 50px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	border-bottom: 2px solid #fff;
+	outline: none;
+	background: transparent;
+}
+textarea:hover::placeholder
+{
+	transform: translateY(-15px);
+	transition: all 0.5s ease;
+	font-size: 15px;
+}
+form label
+{
+	display: none;
+}
+form select 
+{
+	color: gray;
+	margin-top:30px;
+	width: 300px;
+	height: 50px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	border-bottom: 2px solid #fff;
+	outline: none;
+	background: transparent;
+	font-size:15px;
+}
+
+select:hover::placeholder
+{
+	transform: translateY(-15px);
+	transition: all 0.5s ease;
+	font-size: 15px;
+	
+}
+form select option
+{
+	 background: #000;
+
+		
+}
+#contact-head
+{
+	text-align: center;
+	width: 100%;
+	margin-left: 100px;
+}
+.contact-form
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.submit
+{
+	padding: 10px;
+	margin-top: 20px;
+	width: 300px;
+}
+@media  screen and (max-width: 400px)
+{
+	.form input
+	{
+		width: 100%;
+	}
+	.submit
+	{
+		width: 100%;
+	}
+}

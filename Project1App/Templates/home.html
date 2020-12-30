@@ -1,0 +1,25 @@
+
+{% load static %}
+{% block content %}
+<section class=" home container-fluid position-relative">
+    <div class="line-circle d-block">
+        <div class="line"></div>
+        <div class="circle"></div>			
+    </div>
+    <div class="row  align-items-center justify-content-center ">
+        <div class="content col-12 col-sm-10 col-md-5 col-lg-5 col-xl-5 order-2 order-lg-1 order-xl-1 text-justify ">
+            <h1 class="text-center">Our Aim</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. 
+            </p>
+        </div>
+        <div class="image col-12 col-sm-10 col-md-5 col-lg-5 col-xl-5 order-1 ">
+            <img src="{% static 'image/image.svg' %}">
+        </div>
+    </div>
+    <div class="lineborder " style="margin-top: 100px;"></div>
+</section>
+{% endblock content %}

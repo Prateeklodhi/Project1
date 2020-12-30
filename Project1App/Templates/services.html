@@ -1,0 +1,41 @@
+
+{% load static %}
+{% block content %}
+<section class="services mt-5 container-fluid text-light" id="service">
+    <h1 class="text-center mb-5">We Provide Services</h1>
+    <div class="cards container-fluid col-12">
+        <div class="row align-items-center justify-content-center text-justify">
+            <div class="content col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 order-1">
+                <h2 class="text-center">Web Services</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+            <div class="img col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 order-2">
+                <img src="{% static 'image/webDevelopment.jpg' %}" style="margin-left: 40px;">
+            </div>
+        </div>	
+    </div>
+    <div class="cards container-fluid col-12">
+        <div class="row align-items-center justify-content-center text-justify">
+            <div class="content col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 order-xl-2 order-lg-2 order-1 order-md-2">
+                <h2 class="text-center">Website Designing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+            <div class="img col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 order-2 order-xl-1 order-lg-1 order-md-1">
+                <img src="{% static 'image/webDevelopment.jpg ' %}" style="margin-left: -80px;">
+            </div>
+        </div>	
+    </div>
+    <div class="lineborder mt-5"></div>
+
+    <div class="line-circle d-block">
+        <div class="lineservice"></div>			
+    </div>
+
+</section>  
+{% endblock content %}

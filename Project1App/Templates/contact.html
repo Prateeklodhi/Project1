@@ -1,0 +1,16 @@
+
+{% load static %}
+{% block content %}
+<section class="contact-us container-fluid" id = "contact">
+    <h1>Conatct Us</h1>
+    <div class="contact-form container">
+      
+        <form class="form col-10 col-sm-9 col-md-7 col-lg-5 col-xl-4" action="" method = "POST">
+           {% csrf_token %}
+           {{form.as_p}}   
+           <button type="submit" class="btn btn-primary submit" name="submit">Submit</button>
+        </form>                
+    </div>
+    
+</section>
+{% endblock content %}
