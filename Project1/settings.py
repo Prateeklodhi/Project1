@@ -125,11 +125,11 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/image/'
 
 STATICFILES_DIRS =[
-    os.path.join(BASE_DIR,'staitc'),
+    os.path.join(BASE_DIR,'staitc/css'),
     
 ]
 MEDIAFILES_DIRS=[
-    os.path.join(BASE_DIR,'image')
+    os.path.join(BASE_DIR,'static/image')
 ]
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS={
